@@ -1,0 +1,25 @@
+{
+  "name": "cse341",
+  "version": "1.0.0",
+  "description": "Node.js project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev-start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DPatter52/CSE341.git"
+  },
+  "author": "Devin Patterson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DPatter52/CSE341/issues"
+  },
+  "homepage": "https://github.com/DPatter52/CSE341#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongodb": "^4.13.0"
+  }
+}

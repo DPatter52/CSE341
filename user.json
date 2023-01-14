@@ -1,0 +1,6 @@
+[{
+    "_id": {
+        "$oid": "dbUserPassword"
+    },
+    "username": "dbUser"
+}]
