@@ -1,8 +1,13 @@
+# LOCAL GET REQUESTS
+
 ###
 GET http://localhost:8080/contacts
 
 ###
 GET http://localhost:8080/contacts/63ba2c1898a0c4386448e05f
+
+
+# RENDER GET REQUESTS
 
 ###
 GET https://cse341render.onrender.com/contacts
