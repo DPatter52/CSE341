@@ -28,19 +28,20 @@ content-type: application/json
     "birthday": "04/12/2000"
 }
 
-POST http://localhost:8080/contacts
+###
+POST  https://cse341render.onrender.com/contacts
 content-type: application/json
 
 {
-    "firstName": "Teagan",
+    "firstName": "John",
     "lastName": "Patterson",
-    "email": "tiggy@email.com",
-    "favoriteColor": "Green",
-    "birthday": "04/12/2000"
+    "email": "pirojp@email.com",
+    "favoriteColor": "Maroon",
+    "birthday": "06/24/64"
 }
 
 ### RENDER PUT REQUESTS
-PUT http://localhost:8080/contacts/63ba2c1898a0c4386448e05f 
+PUT http://localhost:8080/contacts/63ba2c1898a0c4386448e05d
 content-type: application/json
 
 {
@@ -51,7 +52,22 @@ content-type: application/json
     "birthday": "12/12/20"
 }
 
+###
+PUT https://cse341render.onrender.com/contacts/63ba2c1898a0c4386448e05d
+content-type: application/json
+
+{
+    "firstName": "Sarah",
+    "lastName": "Birch",
+    "email": "amazingwoman@test.com",
+    "favoriteColor": "Green",
+    "birthday": "12/12/20"
+}
+
 
 ### RENDER DELETE REQUESTS
 DELETE http://localhost:8080/contacts/63ba2c1898a0c4386448e05f 
+
+###
+DELETE https://cse341render.onrender.com/contacts/63ccb6da26c7ed02f66da1ce
 
