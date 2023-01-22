@@ -4,13 +4,40 @@
 GET http://localhost:8080/contacts
 
 ###
-GET http://localhost:8080/contacts/63ba2c1898a0c4386448e05f
+GET http://localhost:8080/contacts/63ba2c1898a0c4386448e05f 
 
 
 # RENDER GET REQUESTS
 
 ###
-GET https://cse341render.onrender.com/contacts
+GET https://cse341render.onrender.com/contacts HTTP/1.1 content-type: application/json
 
 ###
-GET https://cse341render.onrender.com/contacts/63ba2c1898a0c4386448e05f
+GET https://cse341render.onrender.com/contacts/63ba2c1898a0c4386448e05f HTTP/1.1 content-type: application/json
+
+
+### RENDER POST REQUESTS
+POST http://localhost:8080/contacts HTTP/1.1 content-type: application/json
+ 
+{
+    "firstName": "Teagan",
+    "lastName": "Patterson",
+    "email": "tiggy@email.com",
+    "favoriteColor": "Green",
+    "birthday": "04/12/2000"
+}
+
+### RENDER PUT REQUESTS
+PUT http://localhost:8080/contacts/63ba2c1898a0c4386448e05f HTTP/1.1 content-type: application/json
+
+{
+    "firstName": "Sarah",
+    "lastName": "Birch",
+    "email": "amazingwoman@test.com",
+    "favoriteColor": "Red",
+    "birthday": "12/12/20"
+}
+
+
+### RENDER DELETE REQUESTS
+DELETE http://localhost:8080/contacts/63ba2c1898a0c4386448e05f HTTP/1.1 content-type: application/json
