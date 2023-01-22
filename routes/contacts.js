@@ -1,16 +1,34 @@
+// const express = require('express');
+// const routes = express.Router();
+
+// const { getContacts, getContact, createContact, updateContact, deleteContact } = require('../controllers/contacts');
+
+// routes.get('/', getContacts);
+
+// routes.get('/:id', getContact);
+
+// routes.get('/', createContact);
+
+// routes.get('/:id', updateContact);
+
+// routes.get('/:id', deleteContact);
+
+// module.exports = routes;
+
+
 const express = require('express');
 const routes = express.Router();
 
-const { getContacts, getContact, createContact, updateContact, deleteContact } = require('../controllers/contacts');
+const contactsControl = require('../controllers/contacts');
 
-routes.get('/', getContacts);
+routes.get('/', contactsControl.getContacts);
 
-routes.get('/:id', getContact);
+routes.get('/:id', contactsControl.getContact);
 
-routes.get('/', createContact);
+routes.post('/', contactsControl.createContact);
 
-routes.get('/:id', updateContact);
+routes.put('/:id', contactsControl.updateContact);
 
-routes.get('/:id', deleteContact);
+routes.delete('/:id', contactsControl.deleteContact);
 
 module.exports = routes;
