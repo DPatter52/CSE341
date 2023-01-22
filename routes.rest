@@ -17,7 +17,8 @@ GET https://cse341render.onrender.com/contacts/63ba2c1898a0c4386448e05f HTTP/1.1
 
 
 ### RENDER POST REQUESTS
-POST http://localhost:8080/contacts 
+POST http://localhost:8080/contacts HTTP/1.1 content-type: application/json
+content-type: application/json
  
 {
     "firstName": "Teagan",
@@ -28,7 +29,8 @@ POST http://localhost:8080/contacts
 }
 
 ### RENDER PUT REQUESTS
-PUT http://localhost:8080/contacts/63ba2c1898a0c4386448e05f 
+PUT http://localhost:8080/contacts/63ba2c1898a0c4386448e05f HTTP/1.1 content-type: application/json
+content-type: application/json
 
 {
     "firstName": "Sarah",
@@ -40,6 +42,6 @@ PUT http://localhost:8080/contacts/63ba2c1898a0c4386448e05f
 
 
 ### RENDER DELETE REQUESTS
-DELETE http://localhost:8080/contacts/63ba2c1898a0c4386448e05f 
+DELETE http://localhost:8080/contacts/63ba2c1898a0c4386448e05f HTTP/1.1 content-type: application/json
 
 # HTTP/1.1 content-type: application/json
