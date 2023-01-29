@@ -1,25 +1,3 @@
-// const {MongoClient} = require('mongodb');
-
-// async function main() {
-//     const uri = "mongodb+srv://dbUser:dbUserPassword@cluster0.csn3zdz.mongodb.net/?retryWrites=true&w=majority";
-
-//     const client = new MongoClient(uri);  
-
-//     try {
-//         await client.connect();
-
-//         await listDatabases(client);
-
-//     } catch (e) {
-//         console.error(e);
-
-//     } finally {
-//         await client.close();
-//     }
-// }
-
-// main().catch(console.error);
-
 const dotenv = require("dotenv");
 dotenv.config();
 
