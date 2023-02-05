@@ -90,3 +90,11 @@ const createBook = async (req, res) => {
         );
     }
   };
+
+  module.exports = {
+    getBooks,
+    getBook,
+    createBook, 
+    updateBook, 
+    deleteBook,
+  };
