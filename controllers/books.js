@@ -28,13 +28,14 @@ const createBook = async (req, res) => {
       author: req.body.author,
       pages: req.body.pages,
       genre: req.body.genre,
-      readingLvl: req.body.readingLvl,
+      publishYear: req.body.publishYear,
+      invCount: req.body.invCount
     };
     const response = await mongodb
       .getDb()
       .db("test2")
       .collection("book_inventory")
-      .insertOne(contact);
+      .insertOne(book);
     if (response.acknowledged) {
       res.status(201).json(response);
     } else {
@@ -53,7 +54,8 @@ const createBook = async (req, res) => {
         author: req.body.author,
         pages: req.body.pages,
         genre: req.body.genre,
-        readingLvl: req.body.readingLvl,
+        publishYear: req.body.publishYear,
+        invCount: req.body.invCount
     };
     const response = await mongodb
       .getDb()

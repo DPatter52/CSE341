@@ -1,102 +1,41 @@
-# # LOCAL GET REQUESTS
-
-# ###
-# GET http://localhost:8080/contacts
-
-# ###
-# GET http://localhost:8080/contacts/63ba2c1898a0c4386448e05f 
-
-
-# # RENDER GET REQUESTS
-
-# ###
-# GET https://cse341render.onrender.com/contacts
-
-# ###
-# GET https://cse341render.onrender.com/contacts/63ba2c1898a0c4386448e05f
-
-
-# ### RENDER POST REQUESTS
-# POST http://localhost:8080/contacts
-# content-type: application/json
-
-# {
-#     "firstName": "Teagan",
-#     "lastName": "Patterson",
-#     "email": "tiggy@email.com",
-#     "favoriteColor": "Green",
-#     "birthday": "04/12/2000"
-# }
-
-# ###
-# POST  https://cse341render.onrender.com/contacts
-# content-type: application/json
-
-# {
-#     "firstName": "John",
-#     "lastName": "Patterson",
-#     "email": "pirojp@email.com",
-#     "favoriteColor": "Maroon",
-#     "birthday": "06/24/64"
-# }
-
-# ### RENDER PUT REQUESTS
-# PUT http://localhost:8080/contacts/63ba2c1898a0c4386448e05d
-# content-type: application/json
-
-# {
-#     "firstName": "Sarah",
-#     "lastName": "Birch",
-#     "email": "amazingwoman@test.com",
-#     "favoriteColor": "Red",
-#     "birthday": "12/12/20"
-# }
-
-# ###
-# PUT https://cse341render.onrender.com/contacts/63ba2c1898a0c4386448e05d
-# content-type: application/json
-
-# {
-#     "firstName": "Sarah",
-#     "lastName": "Birch",
-#     "email": "amazingwoman@test.com",
-#     "favoriteColor": "Green",
-#     "birthday": "12/12/20"
-# }
-
-
-# ### RENDER DELETE REQUESTS
-# DELETE http://localhost:8080/contacts/63ba2c1898a0c4386448e05f 
-
-# ###
-# DELETE https://cse341render.onrender.com/contacts/63ccb6da26c7ed02f66da1ce
-
-
-
-
 ### LOCAL BOOK REQUESTS
 GET http://localhost:8080/book_inventory
 
 ###
-GET http://localhost:8080/book_inventory
+GET http://localhost:8080/book_inventory/63df3f76c887912aec7a23fa
 
 ###
 POST http://localhost:8080/book_inventory
 content-type: application/json
 
- {
-    "title": "All The Light We Cannot See",
-    "author": "Anthony Doerr",
-    "pages": "554",
-    "genre": "Historical Fiction",
-    "publishYear": "2014"
-  }
+{   
+    "title": "Dune",
+    "author": "Frank Herbert",
+    "pages": "412",
+    "genre": "Science Fiction",
+    "publishYear": "1965",
+    "invCount": "6"
+}
 
 ###
-PUT http://localhost:8080/book_inventory
+PUT http://localhost:8080/book_inventory/63df42955198d6eb205e267b
+content-type: application/json
+
+{   
+    "title": "Dune",
+    "author": "Frank Herbert",
+    "pages": "412",
+    "genre": "Science Fiction",
+    "publishYear": "1965",
+    "invCount": "5"
+}
 
 ### 
-DELETE http://localhost:8080/book_inventory
+DELETE http://localhost:8080/book_inventory/63df41dc5198d6eb205e267a
+
+
+
+
 
 
 
@@ -104,20 +43,37 @@ DELETE http://localhost:8080/book_inventory
 GET https://cse341render.onrender.com/book_inventory
 
 ###
+GET https://cse341render.onrender.com/book_inventory/63df42955198d6eb205e267b
+
+
+###
 POST https://cse341render.onrender.com/book_inventory
 content-type: application/json
 
  {
-    "title": "All The Light We Cannot See",
-    "author": "Anthony Doerr",
-    "pages": "554",
-    "genre": "Historical Fiction",
-    "publishYear": "2014"
+   "title": "Dune",
+    "author": "Frank Herbert",
+    "pages": "412",
+    "genre": "Science Fiction",
+    "publishYear": "1965",
+    "invCount": "6"
   }
 
 ###
-PUT https://cse341render.onrender.com/book_inventory
+PUT https://cse341render.onrender.com/book_inventory/63df42955198d6eb205e267b
+
+content-type: application/json
+
+ {
+   "title": "Dune",
+    "author": "Frank Herbert",
+    "pages": "412",
+    "genre": "Science Fiction",
+    "publishYear": "1965",
+    "invCount": "22"
+  }
 
 ###
-DELETE https://cse341render.onrender.com/book_inventory
+DELETE https://cse341render.onrender.com/book_inventory/63df42955198d6eb205e267b
+
 
