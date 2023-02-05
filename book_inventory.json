@@ -1,121 +1,111 @@
 [
-    {
-        "_id": {
-            "$oid": "1"
-        },
-        "title": " ",
-        "author": " ",
-        "pages": " ",
-        "genre": " ",
-        "readingLvl": " "
-
+  {
+    "_id": {
+      "$oid": "1"
     },
+    "title": "All The Light We Cannot See",
+    "author": "Anthony Doerr",
+    "pages": "554",
+    "genre": "Historical Fiction",
+    "publishYear": "2014"
+  },
 
-    {
-        "_id": {
-            "$oid": "1"
-        },
-        "title": " ",
-        "author": " ",
-        "pages": " ",
-        "genre": " ",
-        "readingLvl": " "
-
+  {
+    "_id": {
+      "$oid": "2"
     },
+    "title": "The Night Circus",
+    "author": "Erin Morgenstern",
+    "pages": "516",
+    "genre": "Fantasy",
+    "publishYear": "2011"
+  },
 
-    {
-        "_id": {
-            "$oid": "1"
-        },
-        "title": " ",
-        "author": " ",
-        "pages": " ",
-        "genre": " ",
-        "readingLvl": " "
-
+  {
+    "_id": {
+      "$oid": "3"
     },
+    "title": "Everything I Never Told You",
+    "author": "Celeste Ng",
+    "pages": "304",
+    "genre": "Contemporary Fiction",
+    "publishYear": "2020"
+  },
 
-    {
-        "_id": {
-            "$oid": "1"
-        },
-        "title": " ",
-        "author": " ",
-        "pages": " ",
-        "genre": " ",
-        "readingLvl": " "
-
+  {
+    "_id": {
+      "$oid": "4"
     },
+    "title": "A Man Called Ove",
+    "author": "Fredrick Backman",
+    "pages": "352",
+    "genre": "Contemporary Fiction",
+    "publishYear": "2012"
+  },
 
-    {
-        "_id": {
-            "$oid": "1"
-        },
-        "title": " ",
-        "author": " ",
-        "pages": " ",
-        "genre": " ",
-        "readingLvl": " "
-
+  {
+    "_id": {
+      "$oid": "5"
     },
+    "title": "Where The Crawdads Sing",
+    "author": "Delia Owens",
+    "pages": "384",
+    "genre": "Adult Literature & Fiction",
+    "publishYear": "2018"
+  },
 
-    {
-        "_id": {
-            "$oid": "1"
-        },
-        "title": " ",
-        "author": " ",
-        "pages": " ",
-        "genre": " ",
-        "readingLvl": " "
-
+  {
+    "_id": {
+      "$oid": "6"
     },
+    "title": "The Kite Runner",
+    "author": "Khaled Hosseini",
+    "pages": "371",
+    "genre": "Contemporary Fiction",
+    "publishYear": "2003"
+  },
 
-    {
-        "_id": {
-            "$oid": "1"
-        },
-        "title": " ",
-        "author": " ",
-        "pages": " ",
-        "genre": " ",
-        "readingLvl": " "
-
+  {
+    "_id": {
+      "$oid": "7"
     },
+    "title": "The Martian",
+    "author": "Andy Weir",
+    "pages": "384",
+    "genre": "Science Fiction",
+    "publishYear": "2011"
+  },
 
-    {
-        "_id": {
-            "$oid": "1"
-        },
-        "title": " ",
-        "author": " ",
-        "pages": " ",
-        "genre": " ",
-        "readingLvl": " "
-
+  {
+    "_id": {
+      "$oid": "8"
     },
+    "title": "World War Z",
+    "author": "Max Brooks",
+    "pages": "342",
+    "genre": "Science Fiction",
+    "publishYear": "2006"
+  },
 
-    {
-        "_id": {
-            "$oid": "1"
-        },
-        "title": " ",
-        "author": " ",
-        "pages": " ",
-        "genre": " ",
-        "readingLvl": " "
-
+  {
+    "_id": {
+      "$oid": "9"
     },
+    "title": "Enders Game",
+    "author": "Orson Scott Card",
+    "pages": "384",
+    "genre": "Science Fiction",
+    "publishYear": "1985"
+  },
 
-    {
-        "_id": {
-            "$oid": "1"
-        },
-        "title": " ",
-        "author": " ",
-        "pages": " ",
-        "genre": " ",
-        "readingLvl": " "
-
-    }
+  {
+    "_id": {
+      "$oid": "10"
+    },
+    "title": "Dune",
+    "author": "Frank Herbert",
+    "pages": "412",
+    "genre": "Science Fiction",
+    "publishYear": "1965"
+  }
 ]
