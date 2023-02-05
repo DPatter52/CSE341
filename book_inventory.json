@@ -1,0 +1,121 @@
+[
+    {
+        "_id": {
+            "$oid": "1"
+        },
+        "title": " ",
+        "author": " ",
+        "pages": " ",
+        "genre": " ",
+        "readingLvl": " "
+
+    },
+
+    {
+        "_id": {
+            "$oid": "1"
+        },
+        "title": " ",
+        "author": " ",
+        "pages": " ",
+        "genre": " ",
+        "readingLvl": " "
+
+    },
+
+    {
+        "_id": {
+            "$oid": "1"
+        },
+        "title": " ",
+        "author": " ",
+        "pages": " ",
+        "genre": " ",
+        "readingLvl": " "
+
+    },
+
+    {
+        "_id": {
+            "$oid": "1"
+        },
+        "title": " ",
+        "author": " ",
+        "pages": " ",
+        "genre": " ",
+        "readingLvl": " "
+
+    },
+
+    {
+        "_id": {
+            "$oid": "1"
+        },
+        "title": " ",
+        "author": " ",
+        "pages": " ",
+        "genre": " ",
+        "readingLvl": " "
+
+    },
+
+    {
+        "_id": {
+            "$oid": "1"
+        },
+        "title": " ",
+        "author": " ",
+        "pages": " ",
+        "genre": " ",
+        "readingLvl": " "
+
+    },
+
+    {
+        "_id": {
+            "$oid": "1"
+        },
+        "title": " ",
+        "author": " ",
+        "pages": " ",
+        "genre": " ",
+        "readingLvl": " "
+
+    },
+
+    {
+        "_id": {
+            "$oid": "1"
+        },
+        "title": " ",
+        "author": " ",
+        "pages": " ",
+        "genre": " ",
+        "readingLvl": " "
+
+    },
+
+    {
+        "_id": {
+            "$oid": "1"
+        },
+        "title": " ",
+        "author": " ",
+        "pages": " ",
+        "genre": " ",
+        "readingLvl": " "
+
+    },
+
+    {
+        "_id": {
+            "$oid": "1"
+        },
+        "title": " ",
+        "author": " ",
+        "pages": " ",
+        "genre": " ",
+        "readingLvl": " "
+
+    }
+]
