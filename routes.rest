@@ -82,6 +82,15 @@ GET http://localhost:8080/book_inventory
 
 ###
 POST http://localhost:8080/book_inventory
+content-type: application/json
+
+ {
+    "title": "All The Light We Cannot See",
+    "author": "Anthony Doerr",
+    "pages": "554",
+    "genre": "Historical Fiction",
+    "publishYear": "2014"
+  }
 
 ###
 PUT http://localhost:8080/book_inventory
@@ -96,6 +105,15 @@ GET https://cse341render.onrender.com/book_inventory
 
 ###
 POST https://cse341render.onrender.com/book_inventory
+content-type: application/json
+
+ {
+    "title": "All The Light We Cannot See",
+    "author": "Anthony Doerr",
+    "pages": "554",
+    "genre": "Historical Fiction",
+    "publishYear": "2014"
+  }
 
 ###
 PUT https://cse341render.onrender.com/book_inventory
