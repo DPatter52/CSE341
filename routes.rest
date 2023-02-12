@@ -27,7 +27,7 @@ content-type: application/json
     "pages": "412",
     "genre": "Science Fiction",
     "publishYear": "1965",
-    "invCount": "5"
+    "invCount": "2"
 }
 
 ### 
@@ -70,7 +70,7 @@ content-type: application/json
     "pages": "412",
     "genre": "Science Fiction",
     "publishYear": "1965",
-    "invCount": "22"
+    "invCount": "0"
   }
 
 ###
