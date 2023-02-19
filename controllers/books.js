@@ -19,7 +19,7 @@ const getBooks = async (req, res) => {
 
 const getBook = async (req, res) => {
   if (!ObjectId.isValid(req.params.id)) {
-    res.status(400).json('Must use a valid book id to get book information.');
+    res.status(400).json("Must use a valid book id to get book information.");
   }
   const bookId = new ObjectId(req.params.id);
   mongodb
@@ -64,7 +64,9 @@ const createBook = async (req, res) => {
 
 const updateBook = async (req, res) => {
   if (!ObjectId.isValid(req.params.id)) {
-    res.status(400).json('Must use a valid book id to update book information.');
+    res
+      .status(400)
+      .json("Must use a valid book id to update book information.");
   }
   const bookId = new ObjectId(req.params.id);
   const book = {
@@ -94,7 +96,7 @@ const updateBook = async (req, res) => {
 
 const deleteBook = async (req, res) => {
   if (!ObjectId.isValid(req.params.id)) {
-    res.status(400).json('Must use a valid book id to delete book.');
+    res.status(400).json("Must use a valid book id to delete book.");
   }
   const bookId = new ObjectId(req.params.id);
   const result = await mongodb

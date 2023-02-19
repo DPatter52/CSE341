@@ -7,16 +7,12 @@
   },
   "host": "localhost:8080",
   "basePath": "/",
-  "schemes": [
-    "http"
-  ],
+  "schemes": ["http"],
   "paths": {
     "/book_inventory/": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "parameters": [],
         "responses": {
           "200": {
@@ -24,6 +20,7 @@
           }
         }
       },
+
       "post": {
         "description": "",
         "parameters": [
@@ -45,7 +42,7 @@
                 "genre": {
                   "example": "any"
                 },
-                "readingLvl": {
+                "publishYear": {
                   "example": "any"
                 }
               }
@@ -65,9 +62,7 @@
     "/book_inventory/{id}": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "parameters": [
           {
             "name": "id",
@@ -109,7 +104,7 @@
                 "genre": {
                   "example": "any"
                 },
-                "readingLvl": {
+                "publishYear": {
                   "example": "any"
                 }
               }
