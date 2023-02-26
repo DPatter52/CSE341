@@ -1,4 +1,4 @@
-const { validator } = require("../helpers/validate");
+const { check } = require("express-validator");
 
 const saveBook = (req, res, next) => {
   const validationReq = {
@@ -7,10 +7,10 @@ const saveBook = (req, res, next) => {
     pages: "required|string",
     genre: "required|string",
     puplishYear: "required|string",
-    invCount: "required|string",
+    invCount: "required|string"
   };
 
-  validator(req.body, validationReq, {}, (err, status) => {
+  check(req.body, validationReq, {}, (err, status) => {
     if (!status) {
       res.status(412).send({
         success: false,
@@ -25,13 +25,13 @@ const saveBook = (req, res, next) => {
 
 const saveRenter = (req, res, next) => {
   const validationReq = {
-    name: "required|string",
-    birthday: "required|string",
-    title: "required|string",
-    checkout: "required|string",
+      name: "required|string",
+      birthday: "required|string",
+      title: "required|string",
+      checkout: "required|string",
   };
 
-  validator(req.body, validationReq, {}, (err, status) => {
+  check(req.body, validationReq, {}, (err, status) => {
     if (!status) {
       res.status(412).send({
         success: false,
@@ -46,5 +46,5 @@ const saveRenter = (req, res, next) => {
 
 module.exports = {
   saveBook,
-  saveRenter,
+  saveRenter
 };
