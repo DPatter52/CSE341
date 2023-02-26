@@ -7,24 +7,28 @@
   },
   "host": "cse341render.onrender.com",
   "basePath": "/",
-  "schemes": ["https"],
+  "schemes": [
+    "https"
+  ],
   "paths": {
     "/book_inventory/": {
       "get": {
         "description": "",
-        "tags": ["Book Requests:"],
-        "produces": ["application/json"],
+        "produces": [
+          "application/json"
+        ],
         "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
           }
         }
       },
-
       "post": {
         "description": "",
-        "tags": ["Book Requests:"],
         "parameters": [
           {
             "name": "body",
@@ -58,6 +62,12 @@
           "201": {
             "description": "Created"
           },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "412": {
+            "description": "Precondition Failed"
+          },
           "500": {
             "description": "Internal Server Error"
           }
@@ -67,8 +77,9 @@
     "/book_inventory/{id}": {
       "get": {
         "description": "",
-        "tags": ["Book Requests:"],
-        "produces": ["application/json"],
+        "produces": [
+          "application/json"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -80,12 +91,14 @@
         "responses": {
           "200": {
             "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
           }
         }
       },
       "put": {
         "description": "",
-        "tags": ["Book Requests:"],
         "parameters": [
           {
             "name": "id",
@@ -125,6 +138,15 @@
           "204": {
             "description": "No Content"
           },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "412": {
+            "description": "Precondition Failed"
+          },
           "500": {
             "description": "Internal Server Error"
           }
@@ -132,7 +154,6 @@
       },
       "delete": {
         "description": "",
-        "tags": ["Book Requests:"],
         "parameters": [
           {
             "name": "id",
@@ -145,6 +166,12 @@
           "200": {
             "description": "OK"
           },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
           "500": {
             "description": "Internal Server Error"
           }
@@ -154,19 +181,21 @@
     "/renter_info/": {
       "get": {
         "description": "",
-        "tags": ["Renter Requests:"],
-        "produces": ["application/json"],
+        "produces": [
+          "application/json"
+        ],
         "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
           }
         }
       },
-
       "post": {
         "description": "",
-        "tags": ["Renter Requests:"],
         "parameters": [
           {
             "name": "body",
@@ -174,13 +203,10 @@
             "schema": {
               "type": "object",
               "properties": {
-                "name": {
+                "title": {
                   "example": "any"
                 },
                 "birthday": {
-                  "example": "any"
-                },
-                "title": {
                   "example": "any"
                 },
                 "checkout": {
@@ -194,6 +220,12 @@
           "201": {
             "description": "Created"
           },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "412": {
+            "description": "Precondition Failed"
+          },
           "500": {
             "description": "Internal Server Error"
           }
@@ -203,8 +235,9 @@
     "/renter_info/{id}": {
       "get": {
         "description": "",
-        "tags": ["Renter Requests:"],
-        "produces": ["application/json"],
+        "produces": [
+          "application/json"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -216,12 +249,14 @@
         "responses": {
           "200": {
             "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
           }
         }
       },
       "put": {
         "description": "",
-        "tags": ["Renter Requests:"],
         "parameters": [
           {
             "name": "id",
@@ -235,13 +270,10 @@
             "schema": {
               "type": "object",
               "properties": {
-                "name": {
+                "title": {
                   "example": "any"
                 },
                 "birthday": {
-                  "example": "any"
-                },
-                "title": {
                   "example": "any"
                 },
                 "checkout": {
@@ -250,11 +282,27 @@
               }
             }
           }
-        ]
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "412": {
+            "description": "Precondition Failed"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
       },
       "delete": {
         "description": "",
-        "tags": ["Renter Requests:"],
         "parameters": [
           {
             "name": "id",
@@ -267,6 +315,12 @@
           "200": {
             "description": "OK"
           },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
           "500": {
             "description": "Internal Server Error"
           }
@@ -276,7 +330,6 @@
     "/api-docs": {
       "get": {
         "description": "",
-        "tags": ["API-DOCS"],
         "parameters": [],
         "responses": {}
       }
