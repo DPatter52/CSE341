@@ -1,13 +1,13 @@
 // startup
 const { auth, requiresAuth } = require("express-openid-connect");
-
+const app = express();
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongodb = require("./db/connect");
 const cors = require("cors");
 
 const port = process.env.PORT || 3000;
-const app = express();
+
 
 const config = {
   authRequired: false,
