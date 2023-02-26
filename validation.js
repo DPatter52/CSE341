@@ -7,6 +7,7 @@ const saveBook = (req, res, next) => {
     pages: "required|string",
     genre: "required|string",
     puplishYear: "required|string",
+    invCount: "required|string"
   };
 
   check(req.body, validationReq, {}, (err, status) => {
