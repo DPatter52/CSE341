@@ -1,0 +1,21 @@
+[
+  {
+    "_id": {
+      "oid": ""
+    },
+    "name": "Juny Cortez",
+    "birthday": "01/2/1996",
+    "title": "Where The Crawdads Sing",
+    "chekcout": "2/16/2023"
+  },
+
+  {
+    "_id": {
+      "oid": ""
+    },
+    "name": "Chase Patterson",
+    "birthday": "06/",
+    "title": "Where The Crawdads Sing",
+    "chekcout": "2/16/2023"
+  },
+]

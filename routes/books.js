@@ -2,7 +2,7 @@ const express = require("express");
 const routes = express.Router();
 
 const booksControl = require("../controllers/books");
-const validation = require("../validation")
+const validation = require("../validation");
 
 routes.get("/", booksControl.getBooks);
 

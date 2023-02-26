@@ -1,17 +1,18 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "Book Box",
-    "description": "Description",
+    "title": "CSE341 Library App",
+    "description": "This API is used to simulate manipulating data from a database in a real-life situation.",
     "version": "1.0.0"
   },
-  "host": "localhost:8080",
+  "host": "cse341render.onrender.com",
   "basePath": "/",
-  "schemes": ["http"],
+  "schemes": ["https"],
   "paths": {
     "/book_inventory/": {
       "get": {
         "description": "",
+        "tags": ["Book Requests:"],
         "produces": ["application/json"],
         "parameters": [],
         "responses": {
@@ -23,6 +24,7 @@
 
       "post": {
         "description": "",
+        "tags": ["Book Requests:"],
         "parameters": [
           {
             "name": "body",
@@ -62,6 +64,7 @@
     "/book_inventory/{id}": {
       "get": {
         "description": "",
+        "tags": ["Book Requests:"],
         "produces": ["application/json"],
         "parameters": [
           {
@@ -79,6 +82,7 @@
       },
       "put": {
         "description": "",
+        "tags": ["Book Requests:"],
         "parameters": [
           {
             "name": "id",
@@ -122,6 +126,129 @@
       },
       "delete": {
         "description": "",
+        "tags": ["Book Requests:"],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/renter_info/": {
+      "get": {
+        "description": "",
+        "tags": ["Renter Requests:"],
+        "produces": ["application/json"],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+
+      "post": {
+        "description": "",
+        "tags": ["Renter Requests:"],
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "example": "any"
+                },
+                "birthday": {
+                  "example": "any"
+                },
+                "title": {
+                  "example": "any"
+                },
+                "checkout": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/renter_info/{id}": {
+      "get": {
+        "description": "",
+        "tags": ["Renter Requests:"],
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "description": "",
+        "tags": ["Renter Requests:"],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "example": "any"
+                },
+                "birthday": {
+                  "example": "any"
+                },
+                "title": {
+                  "example": "any"
+                },
+                "checkout": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "delete": {
+        "description": "",
+        "tags": ["Renter Requests:"],
         "parameters": [
           {
             "name": "id",
@@ -143,6 +270,7 @@
     "/api-docs": {
       "get": {
         "description": "",
+        "tags": ["API-DOCS"],
         "parameters": [],
         "responses": {}
       }
