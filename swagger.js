@@ -5,8 +5,8 @@ const doc = {
       title: 'CSE341 Library App',
       description: 'This API is used to simulate manipulating data from a database in a real-life situation.',
     },
-    host: 'localhost:3000',
-    schemes: ['http'],
+    host: 'cse341render.onrender.com',
+    schemes: ['https'],
 };
   
 const outputFile = './swagger.json';

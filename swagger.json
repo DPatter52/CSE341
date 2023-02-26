@@ -5,9 +5,9 @@
     "description": "This API is used to simulate manipulating data from a database in a real-life situation.",
     "version": "1.0.0"
   },
-  "host": "localhost:3000",
+  "host": "cse341render.onrender.com",
   "basePath": "/",
-  "schemes": ["http"],
+  "schemes": ["https"],
   "paths": {
     "/book_inventory/": {
       "get": {
