@@ -12,10 +12,10 @@
   const config = {
     authRequired: false,
     auth0Logout: true,
-    secret: 'a long, randomly-generated string stored in env',
-    baseURL: 'http://localhost:3000',
-    clientID: 'nr4CJAPcEE3gZfPVUUj09u0BdRVjt4bn',
-    issuerBaseURL: 'https://dev-e3tyxl21rj5pmm68.us.auth0.com'
+    secret: process.env.SECRET,
+    baseURL: process.env.BASE_URL,
+    clientID: process.env.CLIENT_ID,
+    issuerBaseURL: process.env.ISSUER_BASE_URL,
   };
 
   app.use(auth(config));
@@ -24,8 +24,6 @@
     res.send(req.oidc.isAuthenticated() ? 'Logged in' : 'Logged out');
   });
 
-  
-  
 
   app
     .use(bodyParser.json())
