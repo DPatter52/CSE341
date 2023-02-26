@@ -1,4 +1,4 @@
-const { check } = require("express-validator");
+const { validator } = require("../helpers/validator");
 
 const saveBook = (req, res, next) => {
   const validationReq = {
@@ -10,7 +10,7 @@ const saveBook = (req, res, next) => {
     invCount: "required|string"
   };
 
-  check(req.body, validationReq, {}, (err, status) => {
+  validator(req.body, validationReq, {}, (err, status) => {
     if (!status) {
       res.status(412).send({
         success: false,
@@ -31,7 +31,7 @@ const saveRenter = (req, res, next) => {
       checkout: "required|string",
   };
 
-  check(req.body, validationReq, {}, (err, status) => {
+  validator(req.body, validationReq, {}, (err, status) => {
     if (!status) {
       res.status(412).send({
         success: false,
