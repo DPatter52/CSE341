@@ -29,7 +29,8 @@
     "mongodb": "^4.14.0",
     "nodemon": "^2.0.20",
     "swagger": "^0.0.1",
-    "swagger-ui-express": "^4.6.1"
+    "swagger-ui-express": "^4.6.1",
+    "yarn": "^1.22.19"
   },
   "devDependencies": {
     "swagger-autogen": "^2.23.1"
