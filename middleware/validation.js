@@ -7,7 +7,7 @@ const saveBook = (req, res, next) => {
     pages: "required|string",
     genre: "required|string",
     puplishYear: "required|string",
-    invCount: "required|string"
+    invCount: "required|string",
   };
 
   validator(req.body, validationReq, {}, (err, status) => {
@@ -25,10 +25,10 @@ const saveBook = (req, res, next) => {
 
 const saveRenter = (req, res, next) => {
   const validationReq = {
-      name: "required|string",
-      birthday: "required|string",
-      title: "required|string",
-      checkout: "required|string",
+    name: "required|string",
+    birthday: "required|string",
+    title: "required|string",
+    checkout: "required|string",
   };
 
   validator(req.body, validationReq, {}, (err, status) => {
@@ -46,5 +46,5 @@ const saveRenter = (req, res, next) => {
 
 module.exports = {
   saveBook,
-  saveRenter
+  saveRenter,
 };

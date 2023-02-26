@@ -56,9 +56,7 @@ const createBook = async (req, res) => {
   } else {
     res
       .status(500)
-      .json(
-        response.error || "Some error occurred while creating book information."
-      );
+      .json("Some error occurred while creating book information.");
   }
 };
 
