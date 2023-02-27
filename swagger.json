@@ -12,6 +12,7 @@
     "/book_inventory/": {
       "get": {
         "description": "",
+        "tags": ["Book Requests"],
         "produces": ["application/json"],
         "parameters": [],
         "responses": {
@@ -25,6 +26,7 @@
       },
       "post": {
         "description": "",
+        "tags": ["Book Requests"],
         "parameters": [
           {
             "name": "body",
@@ -73,6 +75,7 @@
     "/book_inventory/{id}": {
       "get": {
         "description": "",
+        "tags": ["Book Requests"],
         "produces": ["application/json"],
         "parameters": [
           {
@@ -93,6 +96,7 @@
       },
       "put": {
         "description": "",
+        "tags": ["Book Requests"],
         "parameters": [
           {
             "name": "id",
@@ -148,6 +152,7 @@
       },
       "delete": {
         "description": "",
+        "tags": ["Book Requests"],
         "parameters": [
           {
             "name": "id",
@@ -175,6 +180,7 @@
     "/renter_info/": {
       "get": {
         "description": "",
+        "tags": ["Renter Requests"],
         "produces": ["application/json"],
         "parameters": [],
         "responses": {
@@ -188,6 +194,7 @@
       },
       "post": {
         "description": "",
+        "tags": ["Renter Requests"],
         "parameters": [
           {
             "name": "body",
@@ -227,6 +234,7 @@
     "/renter_info/{id}": {
       "get": {
         "description": "",
+        "tags": ["Renter Requests"],
         "produces": ["application/json"],
         "parameters": [
           {
@@ -247,6 +255,7 @@
       },
       "put": {
         "description": "",
+        "tags": ["Renter Requests"],
         "parameters": [
           {
             "name": "id",
@@ -293,6 +302,7 @@
       },
       "delete": {
         "description": "",
+        "tags": ["Renter Requests"],
         "parameters": [
           {
             "name": "id",
