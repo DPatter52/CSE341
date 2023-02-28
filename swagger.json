@@ -202,6 +202,9 @@
             "schema": {
               "type": "object",
               "properties": {
+                "name": {
+                  "example": "any"
+                },
                 "title": {
                   "example": "any"
                 },
