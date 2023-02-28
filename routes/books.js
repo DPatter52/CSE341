@@ -9,9 +9,9 @@ routes.get("/", booksControl.getBooks);
 
 routes.get("/:id", booksControl.getBook);
 
-routes.post("/", OAuth.checkLoggedIn, validation.saveBook, booksControl.createBook);
+routes.post("/", OAuth.checkLoggedIn, booksControl.createBook);
 
-routes.put("/:id", OAuth.checkLoggedIn, validation.saveBook, booksControl.updateBook);
+routes.put("/:id", OAuth.checkLoggedIn, booksControl.updateBook);
 
 routes.delete("/:id", OAuth.checkLoggedIn, booksControl.deleteBook);
 

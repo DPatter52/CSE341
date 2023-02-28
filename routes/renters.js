@@ -9,9 +9,9 @@ routes.get("/", renterControl.getRenters);
 
 routes.get("/:id", renterControl.getRenter);
 
-routes.post("/", OAuth.checkLoggedIn, validation.saveRenter, renterControl.createRenter);
+routes.post("/", OAuth.checkLoggedIn, renterControl.createRenter);
 
-routes.put("/:id", OAuth.checkLoggedIn, validation.saveRenter, renterControl.updateRenter);
+routes.put("/:id", OAuth.checkLoggedIn, renterControl.updateRenter);
 
 routes.delete("/:id", OAuth.checkLoggedIn, renterControl.deleteRenter);
 
